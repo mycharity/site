@@ -11738,3 +11738,7 @@ body.light-theme .contact-section .footer .links a {
 body.dark-theme {
   background: #212529;
 }
+
+.page-navbar{
+position: relative;
+}
