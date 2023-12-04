@@ -4,12 +4,23 @@
 	<meta charset="utf-8">
     <title>Charity</title>
     <link rel="stylesheet" href="dorang.css">
-
+<style>
+body.dark-theme {
+    background: #212529;
+    background-image: url(header.jpg);
+}
+.header .overlay {
+    position: fixed;
+}
+.page-navbar {
+    height: 10%;
+}
+</style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
     
     <!-- page navbar -->
-    <nav class="page-navbar" data-spy="affix" data-offset-top="10">
+    <div class="page-navbar" data-spy="affix" data-offset-top="10">
         <ul class="nav-navbar container">
             <li class="nav-item"><a href="#" class="nav-link">نبذة عن الموقع </a></li>
             <li class="nav-item"><a href="https://www.alifta.gov.sa/home#servieces" class="nav-link">الرئاسة العامة للبحوث العلمية والافتاء</a></li>
@@ -18,9 +29,9 @@
             <li class="nav-item"><a href="https://alssunnah.com/" class="nav-link">السنة النبوية</a></li>
             <li class="nav-item"><a href="https://quran.com/ar" class="nav-link">القران الكريم</a></li>
         </ul>
-    </nav><!-- end of page navbar -->
+    </div><!-- end of page navbar -->
     <!-- page header -->
-    <header class="header">
+    <div class="header">
         <div class="overlay"></div>
         <div class="header-content">
         
@@ -38,7 +49,7 @@
             <!--<button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button>-->
 
         </div>
-    </header><!-- end of page header -->
+    </div><!-- end of page header -->
     </div> <!-- end of page container -->
 
 
