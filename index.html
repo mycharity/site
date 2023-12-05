@@ -15,31 +15,95 @@
 .page-navbar {
     height: 10%;
 }
+.nav-link{
+color:white;
+font-weight:bold;
+font-size:20px;
+}
+.header .header-content {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 991.98px) {
+.nav-link{
+color:white;
+font-weight:bold;
+font-size:15px;
+}
+.header .header-content {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+}
+
+.header .overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-radial-gradient(100% 110%, 50% 50%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 55%, #212529 150%);
+  background-image:  radial-gradient(100% 110% at 50% 50%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 50%, #212529 150%);
+
+}
+
+.header-title1 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    opacity: .8;
+}
+.header-title2 {
+    font-size: 3.0rem;
+    font-weight: bold;
+    opacity: .8;
+}
+
+
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="dark-theme">
     
     <!-- page navbar -->
-    <div class="page-navbar" data-spy="affix" data-offset-top="10">
-        <ul class="nav-navbar container">
-            <li class="nav-item"><a href="#" class="nav-link">راسلنا</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">نبذة عن الموقع </a></li>
-            <li class="nav-item"><a href="https://islamonline.net/category/rahma" class="nav-link">إسلام أون لآين</a></li>
-            <li class="nav-item"><a href="https://msbaha.com" class="nav-link">آلة التسبيح الإلكترونية</a></li>
-            <li class="nav-item"><a href="https://www.youtube.com/live/pSpsjnUNZN4?si=lWzqcCU9cNeVeURC" class="nav-link">مكة المكرمة – بث مباشر</a></li>
-            <li class="nav-item"><a href="https://alssunnah.com/" class="nav-link">السنة النبوية</a></li>
-            <li class="nav-item"><a href="https://quran.com/ar" class="nav-link">القران الكريم</a></li>
-        </ul>
+    <div class="page-navbar" style='text-align:center'>
+	<table width="90%" border=0 style='border:0px solid grey' align=center>
+	<tr>
+	<td class="nav-item"><a href="#" class="nav-link">راسلنا</a></td>
+	<td class="nav-item"><a href="#" class="nav-link">نبذة عن الموقع </a></td>
+	<td class="nav-item"><a href="https://islamonline.net/category/rahma" class="nav-link">إسلام أون لآين</a></td>
+	<td class="nav-item"><a href="https://msbaha.com" class="nav-link">آلة التسبيح الإلكترونية</a></td>
+	<td class="nav-item"><a href="https://www.youtube.com/watch?v=QuUO_bO2jMQ" class="nav-link">مكة المكرمة – بث مباشر</a></td>
+	<td class="nav-item"><a href="https://alssunnah.com/" class="nav-link">السنة النبوية</a></td>
+	<td class="nav-item"><a href="https://quran.com/ar" class="nav-link">القران الكريم</a></td>
+	</tr>
+	<tr><td colspan=7>&nbsp;</td></tr>
+	
+	<tr><td colspan=7><h1 class="header-title1">تطبيق الروابط للأعمال الخيرية</h1>
+        <h2 class="header-title2">خير الأعمال</h2></td></tr>
+	
+	<tr><td colspan=7>&nbsp;</td></tr>
+
+	</table>
     </div><!-- end of page navbar -->
     <!-- page header -->
-    <div class="header">
+	
+	<div class="header">
+ 
         <div class="overlay"></div>
         <div class="header-content">
         
-         <h1 class="header-title"><br/>تطبيق الروابط للأعمال الخيرية</h1>
-        <h2>خير الأعمال</h2>
+        
          
-        	<h1 class="header-title"><a href="https://qiblafinder.withgoogle.com/intl/ar/desktop" class="nav-link" style="text-align:center;color:white;"><br/><img style="width:100px" src="placeholder.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, weber Landing page"><br/>اتجاه القبلة</a><br/></h1>
+        	<h1 class="header-title"><a href="https://qiblafinder.withgoogle.com/intl/ar/desktop" class="nav-link" style="text-align:center;color:white;">
+			<br/><br/><br/><br/>
+			<img style="width:70px" src="placeholder.svg"><br/>اتجاه القبلة</a><br/></h1>
         
         
            <h1 class="header-title">نبذة عن الموقع</h1>
@@ -52,7 +116,7 @@
 
         </div>
     </div><!-- end of page header -->
-    </div> <!-- end of page container -->
+    
 
 
 </body>
