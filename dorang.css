@@ -11457,7 +11457,7 @@ a:hover {
   min-height: 600px;
   text-align: center;
   color: #fff;
-  background-image: url(header.jpg);
+  background-image: url(makkah.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transition: .2s;
@@ -11472,8 +11472,9 @@ a:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: -webkit-radial-gradient(48% 42%, 140% 110%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 55%, #212529 200%);
-  background-image: radial-gradient(140% 110% at 48% 42%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 55%, #212529 200%);
+  background-image: -webkit-radial-gradient(100% 110%, 50% 50%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 55%, #212529 150%);
+  background-image:  radial-gradient(100% 110% at 50% 50%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 50%, #212529 150%);
+  /*radial-gradient(140% 110% at 48% 42%, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.6), rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.8), rgba(33, 37, 41, 0.93), #212529 55%, #212529 200%);*/
 }
 
 .header .header-content {
@@ -11737,8 +11738,5 @@ body.light-theme .contact-section .footer .links a {
 
 body.dark-theme {
   background: #212529;
-}
-
-.page-navbar{
-position: relative;
+  background-image:url(makkah.jpg);
 }
