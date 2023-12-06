@@ -23,7 +23,7 @@ font-size:20px;
 .header .header-content {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 75%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -56,7 +56,23 @@ font-size:20px;
     opacity: .8;
 }
 
-@media (max-width: 500px) {
+.header {
+    z-index: 990;
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+    color: #fff;
+    background-image: url(makkah.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+@media (max-width: 450px) {
 .nav-link{
 color:white;
 font-weight:bold;
@@ -80,21 +96,87 @@ font-size:18px;
     font-weight: bold;
     opacity: .8;
 }
+
+.header {
+    z-index: 990;
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+    color: #fff;
+    background-image: url(makkah.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
 }
 
-@media (max-width: 991.98px) {
+}
+
+
+@media (max-width: 550px) {
 .nav-link{
 color:white;
 font-weight:bold;
-font-size:15px;
+font-size:20px;
 }
 .header .header-content {
     position: absolute;
     left: 50%;
-    top: 75%;
+    top: 40%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.header {
+    z-index: 990;
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+    color: #fff;
+    background-image: url(makkah.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+}
+
+@media (max-width: 800px) {
+.nav-link{
+color:white;
+font-weight:bold;
+font-size:20px;
+}
+.header .header-content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    z-index: 990;
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    text-align: center;
+    color: #fff;
+    background-image: url(makkah.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
 }
 }
 </style>
@@ -103,25 +185,25 @@ function displayContent(disp_type)
 {
 	if(disp_type=="about-info")
 	{
-		document.getElementById("tr1").style.display="none";
-		document.getElementById("tr2").style.display="none";
-		document.getElementById("tr3").style.display="none";
-		document.getElementById("navigate_h1").style.display="none";
+		document.getElementById("tr1").style.display="";
+		document.getElementById("tr2").style.display="";
+		document.getElementById("tr3").style.display="";
+		document.getElementById("navigate_h1").style.display="";
 		document.getElementById("title_h1").style.display="";
 		document.getElementById("title_p").style.display="";
 		document.getElementById("title_h1").innerHTML="نبذة عن الموقع";
-		document.getElementById("title_p").innerHTML="بسم الله وعلى بركة الله ينطلق التطبيق الخيري  خير الأعمال الرقمي، هذا 2 سبتمبر 2023؛ عن الشيخ الوالد محمد بن هزاع الدعجاني رحمة الله، على شبكة المعلومات، وهو يحوي على ستة بوابات رقمية هي: القران الكريم – السنة النبوية الكريمة – بوابةإسلام أون لاين– اتجاه القبلة – آلة التسبيح الإلكترونية.وهذا العمل تيمناً بما جاء عن رسول الله ﷺ قال: (إذا مات ابن آدم؛ انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له). رواه مسلم نسأل الله التوفيق والسداد، وأن يغفر لوالدنا، وأن يجعل هذا العمل في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزء، إنه سميع قريب مجيب الدعاء.";
+		document.getElementById("title_p").innerHTML="بسم الله وعلى بركة الله ينطلق التطبيق الخيري  خير الأعمال الرقمي، هذا 2 سبتمبر 2023؛ عن الشيخ الوالد محمد بن هزاع الدعجاني رحمة الله، على شبكة المعلومات، وهو يحوي على ستة بوابات رقمية هي: القران الكريم – السنة النبوية الكريمة – بوابةإسلام أون لاين– اتجاه القبلة – آلة التسبيح الإلكترونية.وهذا العمل تيمناً بما جاء عن رسول الله ﷺ قال: (إذا مات ابن آدم؛ انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له). رواه مسلم نسأل الله التوفيق والسداد، وأن يغفر لوالدنا، وأن يجعل هذا العمل في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزء، إنه سميع قريب مجيب الدعاء. <br/><br/> <span style='font-size:10px;'>© 2023 خير الأعمال</span>";
 	}
 	else if(disp_type=="contact-info")
 	{
-		document.getElementById("tr1").style.display="none";
-		document.getElementById("tr2").style.display="none";
-		document.getElementById("tr3").style.display="none";
-		document.getElementById("navigate_h1").style.display="none";
+		document.getElementById("tr1").style.display="";
+		document.getElementById("tr2").style.display="";
+		document.getElementById("tr3").style.display="";
+		document.getElementById("navigate_h1").style.display="";
 		document.getElementById("title_h1").style.display="";
 		document.getElementById("title_h1").innerHTML="راسلنا";
 		document.getElementById("title_p").style.display="";
-		document.getElementById("title_p").innerHTML="<u style='font-weight:bold;font-size:30px;'>best2023work@hotmail.com</u>";
+		document.getElementById("title_p").innerHTML="<u style='font-weight:bold;font-size:30px;color:white;'><a href='mailto:someone@example.com?Subject=Hello%20again' target='_top'>best2023work@hotmail.com</a> <br/><br/> <span style='font-size:10px;'>© 2023 خير الأعمال</span></u>";
 	}
 	else
 	{
@@ -132,7 +214,7 @@ function displayContent(disp_type)
 		document.getElementById("title_h1").style.display="";
 		document.getElementById("title_h1").innerHTML="نبذة عن الموقع";
 		document.getElementById("title_p").style.display="";
-		document.getElementById("title_p").innerHTML="بسم الله وعلى بركة الله ينطلق التطبيق الخيري  خير الأعمال الرقمي، هذا 2 سبتمبر 2023؛ عن الشيخ الوالد محمد بن هزاع الدعجاني رحمة الله، على شبكة المعلومات، وهو يحوي على ستة بوابات رقمية هي: القران الكريم – السنة النبوية الكريمة – بوابةإسلام أون لاين– اتجاه القبلة – آلة التسبيح الإلكترونية.وهذا العمل تيمناً بما جاء عن رسول الله ﷺ قال: (إذا مات ابن آدم؛ انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له). رواه مسلم نسأل الله التوفيق والسداد، وأن يغفر لوالدنا، وأن يجعل هذا العمل في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزء، إنه سميع قريب مجيب الدعاء.";
+		document.getElementById("title_p").innerHTML="بسم الله وعلى بركة الله ينطلق التطبيق الخيري  خير الأعمال الرقمي، هذا 2 سبتمبر 2023؛ عن الشيخ الوالد محمد بن هزاع الدعجاني رحمة الله، على شبكة المعلومات، وهو يحوي على ستة بوابات رقمية هي: القران الكريم – السنة النبوية الكريمة – بوابةإسلام أون لاين– اتجاه القبلة – آلة التسبيح الإلكترونية.وهذا العمل تيمناً بما جاء عن رسول الله ﷺ قال: (إذا مات ابن آدم؛ انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له). رواه مسلم نسأل الله التوفيق والسداد، وأن يغفر لوالدنا، وأن يجعل هذا العمل في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزء، إنه سميع قريب مجيب الدعاء. <br/><br/> <span style='font-size:10px;'>© 2023 خير الأعمال</span>";
 	}
  
 }
@@ -142,22 +224,26 @@ function displayContent(disp_type)
     
     <!-- page navbar -->
     <div class="page-navbar" style='text-align:center'>
-	<table width="90%" border=0 style='border:0px solid grey' align=center>
+	<table width="90%" border=0 style='border:0px solid grey' align=center >
 	<tr>
 	<td class="nav-item"><a href="javascript:displayContent('contact-info')" class="nav-link">راسلنا</a></td>
 	<td class="nav-item"><a href="javascript:displayContent('about-info')" class="nav-link">نبذة عن الموقع </a></td>
 	<td class="nav-item"><a href="https://islamonline.net/category/rahma" class="nav-link">إسلام أون لآين</a></td>
+	<td class="nav-item"><a href="https://qiblafinder.withgoogle.com/intl/ar/desktop" class="nav-link">اتجاه القبلة</a></td>
 	<td class="nav-item"><a href="https://msbaha.com" class="nav-link">آلة التسبيح الإلكترونية</a></td>
 	<td class="nav-item"><a href="https://www.youtube.com/watch?v=QuUO_bO2jMQ" class="nav-link">مكة المكرمة – بث مباشر</a></td>
 	<td class="nav-item"><a href="https://alssunnah.com/" class="nav-link">السنة النبوية</a></td>
 	<td class="nav-item"><a href="https://quran.com/ar" class="nav-link">القران الكريم</a></td>
+	<td class="nav-item"><a href="index.html" class="nav-link">الرئيسية</a></td>
+	<!--<td class="nav-item"><a href="index.html" class="nav-link"><img style="width:120px" src="logo0.png"></a></td>-->
 	</tr>
-	<tr><td colspan=7>&nbsp;</td></tr>
-	<tr id='tr1'><td colspan=7>&nbsp;</td></tr>
-	<tr id='tr2'><td colspan=7><h1 class="header-title1">تطبيق الروابط للأعمال الخيرية</h1>
-        <h2 class="header-title2">خير الأعمال</h2></td></tr>
+	<tr><td colspan=9>&nbsp;</td></tr>
+	<tr><td colspan=9><img style="width:150px" src="logo0.png"></td></tr>
+	<tr id='tr1'><td colspan=9>&nbsp;</td></tr>
+	<tr id='tr2'><td colspan=9><h1 class="header-title1">موقع الروابط للأعمال الخيرية</h1>
+        <!--<h2 class="header-title2">خير الأعمال</h2>--></td></tr>
 	
-	<tr id='tr3'><td colspan=7>&nbsp;</td></tr>
+	<tr id='tr3'><td colspan=9>&nbsp;</td></tr>
 
 	</table>
     </div><!-- end of page navbar -->
@@ -171,7 +257,7 @@ function displayContent(disp_type)
         
          
         	<h1 id='navigate_h1' class="header-title"><a href="https://qiblafinder.withgoogle.com/intl/ar/desktop" class="nav-link" style="text-align:center;color:white;">
-			<br/><br/><br/><br/>
+			<br/><br/>
 			<img style="width:70px" src="placeholder.svg"><br/>اتجاه القبلة</a><br/></h1>
         
         
@@ -179,7 +265,11 @@ function displayContent(disp_type)
             <p id='title_p' id='' class="header-subtitle">
 			بسم الله وعلى بركة الله ينطلق التطبيق الخيري " خير الأعمال" الرقمي، هذا 2 سبتمبر 2023؛ عن الشيخ الوالد محمد بن هزاع الدعجاني رحمة الله، على شبكة المعلومات، وهو يحوي على ستة بوابات رقمية هي: القران الكريم – السنة النبوية الكريمة – بوابةإسلام أون لاين– اتجاه القبلة – آلة التسبيح الإلكترونية.
  وهذا العمل تيمناً بما جاء عن رسول الله ﷺ قال: (إذا مات ابن آدم؛ انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له). رواه مسلم
-نسأل الله التوفيق والسداد، وأن يغفر لوالدنا، وأن يجعل هذا العمل في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزء، إنه سميع قريب مجيب الدعاء.</p>
+نسأل الله التوفيق والسداد، وأن يغفر لوالدنا، وأن يجعل هذا العمل في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزء، إنه سميع قريب مجيب الدعاء. <BR/><BR/>
+
+<span style='font-size:10px;'>© 2023 خير الأعمال</span>
+
+</p>
 
             <!--<button class="btn btn-theme-color modal-toggle"><i class="ti-control-play text-danger"></i> Watch Video</button>-->
 
