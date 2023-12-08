@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
     <title>Charity</title>
     <link rel="stylesheet" href="dorang.css">
+	<link rel="shortcut icon" href="newlogo1.png">
 <style>
 .dark-theme {
     background: #212529;
@@ -190,9 +191,9 @@ function displayContent(disp_type)
 		document.getElementById("tr3").style.display="";
 		document.getElementById("navigate_h1").style.display="";
 		document.getElementById("title_h1").style.display="";
+		document.getElementById("contactus_p").style.display="none";
 		document.getElementById("title_p").style.display="";
 		document.getElementById("title_h1").innerHTML="نبذة عن الموقع";
-		document.getElementById("title_p").innerHTML="بسم الله وعلى بركة الله، ينطلق موقع الروابط الخيري \" خير الأعمال \" الرقمي، في هذا اليوم 2 سبتمبر 2023، عن الشيخ الوالد محمد بن زاع الدعجاني \" رحمة الله \"، على شبكة المعلومات، ويحتوي على سبعة بوابات رقمية تضم: \"القران الكريم - السنة النبوية - مكة المكرمة مباشر -  آلة التسبيح الإلكترونية -  تجاه القبلة -  إسلام أون لاين - مواقيت الصلاة\".وجاء هذا العمل تيمنًا بما ذكر عن رسول الله - ﷺ - قال : إذا مات ابن آدم انقطع عمله إلا من ثلاث: \"صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له\".نسأل الله التوفيق والسداد، وأن يغفر لوالدنا ولجميع موتى المسلمين، وأن يجعل هذا العمل مقبولاً في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزاء، إنه سميع قريب مجيب الدعاء.<BR/><BR/><span style='font-size:10px;'>© 2023 خير الأعمال</span>";
 	}
 	else if(disp_type=="contact-info")
 	{
@@ -202,8 +203,8 @@ function displayContent(disp_type)
 		document.getElementById("navigate_h1").style.display="";
 		document.getElementById("title_h1").style.display="";
 		document.getElementById("title_h1").innerHTML="راسلنا";
-		document.getElementById("title_p").style.display="";
-		document.getElementById("title_p").innerHTML="<u style='font-weight:bold;font-size:30px;color:white;'><a href='mailto:someone@example.com?Subject=Hello%20again' target='_top'>best2023work@hotmail.com</a> <br/><br/> <span style='font-size:10px;'>© 2023 خير الأعمال</span></u>";
+		document.getElementById("title_p").style.display="none";
+		document.getElementById("contactus_p").style.display="";
 	}
 	else
 	{
@@ -212,9 +213,9 @@ function displayContent(disp_type)
 		document.getElementById("tr3").style.display="";
 		document.getElementById("navigate_h1").style.display="";
 		document.getElementById("title_h1").style.display="";
-		document.getElementById("title_h1").innerHTML="نبذة عن الموقع";
+		document.getElementById("contactus_p").style.display="none";
 		document.getElementById("title_p").style.display="";
-		document.getElementById("title_p").innerHTML="بسم الله وعلى بركة الله، ينطلق موقع الروابط الخيري \" خير الأعمال \" الرقمي، في هذا اليوم 2 سبتمبر 2023، عن الشيخ الوالد محمد بن زاع الدعجاني \" رحمة الله \"، على شبكة المعلومات، ويحتوي على سبعة بوابات رقمية تضم: \"القران الكريم - السنة النبوية - مكة المكرمة مباشر -  آلة التسبيح الإلكترونية -  تجاه القبلة -  إسلام أون لاين - مواقيت الصلاة\".وجاء هذا العمل تيمنًا بما ذكر عن رسول الله - ﷺ - قال : إذا مات ابن آدم انقطع عمله إلا من ثلاث: \"صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له\".نسأل الله التوفيق والسداد، وأن يغفر لوالدنا ولجميع موتى المسلمين، وأن يجعل هذا العمل مقبولاً في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزاء، إنه سميع قريب مجيب الدعاء.<BR/><BR/><span style='font-size:10px;'>© 2023 خير الأعمال</span>";
+		document.getElementById("title_h1").innerHTML="نبذة عن الموقع";
 	}
  
 }
@@ -263,7 +264,12 @@ function displayContent(disp_type)
         
         
            <h1 id='title_h1' class="header-title">نبذة عن الموقع</h1>
-            <p id='title_p' id='' class="header-subtitle">بسم الله وعلى بركة الله، ينطلق موقع الروابط الخيري " خير الأعمال " الرقمي، في هذا اليوم 2 سبتمبر 2023، عن الشيخ الوالد محمد بن زاع الدعجاني " رحمة الله "، على شبكة المعلومات، ويحتوي على سبعة بوابات رقمية تضم: "القران الكريم - السنة النبوية - مكة المكرمة مباشر -  آلة التسبيح الإلكترونية -  تجاه القبلة -  إسلام أون لاين - مواقيت الصلاة".وجاء هذا العمل تيمنًا بما ذكر عن رسول الله - ﷺ - قال : إذا مات ابن آدم انقطع عمله إلا من ثلاث: "صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له".نسأل الله التوفيق والسداد، وأن يغفر لوالدنا ولجميع موتى المسلمين، وأن يجعل هذا العمل مقبولاً في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزاء، إنه سميع قريب مجيب الدعاء.<BR/><BR/><span style='font-size:10px;'>© 2023 خير الأعمال</span>
+           <p id='contactus_p' style='display:none;' class="header-subtitle"><u style='font-weight:bold;font-size:30px;color:white;'><a href='mailto:someone@example.com?Subject=Hello%20again' target='_top'>best2023work@hotmail.com</a> <br/><br/> <span style='font-size:10px;'>© 2023 خير الأعمال</span></u></p>
+            <p id='title_p' class="header-subtitle">
+بسم الله وعلى بركة الله، ينطلق موقع الروابط الخيري " خير الأعمال " الرقمي، في هذا اليوم 2 سبتمبر 2023، عن الشيخ الوالد محمد بن هزاع الدعجاني " رحمة الله "، على شبكة المعلومات، ويحتوي على سبعة بوابات رقمية تضم: "القران الكريم - السنة النبوية - مكة المكرمة مباشر -  آلة التسبيح الإلكترونية -  تجاه القبلة -  إسلام أون لاين - مواقيت الصلاة".
+وجاء هذا العمل تيمنًا بما ذكر عن رسول الله - ﷺ - قال : إذا مات ابن آدم انقطع عمله إلا من ثلاث: "صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له".
+نسأل الله التوفيق والسداد، وأن يغفر لوالدنا ولجميع موتى المسلمين، وأن يجعل هذا العمل مقبولاً في ميزان حسناته، وأن يسكنه فسيح جناته، ويجزيه خير الجزاء، إنه سميع قريب مجيب الدعاء.
+<BR/><BR/><span style='font-size:10px;'>© 2023 خير الأعمال</span>
 
 </p>
 
